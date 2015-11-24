@@ -56,6 +56,9 @@ static const char *kScanQRCodeQueueName = "ZYCoreScanQRCodeQueue";
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
     // 创建会话
     _captureSession = [[AVCaptureSession alloc] init];
+    if (!input) {
+        return;
+    }
     // 添加输入流
     [_captureSession addInput:input];
     // 初始化输出流
