@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "ZYCoreViewController.h"
+#import <ZYCoreFramework/ZYCoreViewController.h>
 
 /**
  *  二维码扫码界面
